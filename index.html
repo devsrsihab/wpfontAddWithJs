@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .ff-el-input--content {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+      }
+      .ff-el-input--content i {
+        background-color: white;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        height: 100% !important;
+        display: block;
+        max-width: 100% !important;
+        padding: 15px 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      // Create a new icon element for the text input
+      var textIconElement = document.createElement("i");
+      textIconElement.className = "far fa-user"; // Updated class for FontAwesome 5
+
+      // Get the text input element within the parent with class '.ff-el-input--content'
+      var textInputElement = document.querySelector(
+        '.ff-el-input--content input[type="text"]'
+      );
+
+      // Insert the icon element before the text input element
+      if (textInputElement) {
+        textInputElement.parentNode.insertBefore(
+          textIconElement,
+          textInputElement
+        );
+      }
+
+      // Create a new icon element for the email input
+      var emailIconElement = document.createElement("i");
+      emailIconElement.className = "far fa-envelope"; // Updated class for FontAwesome 5
+
+      // Get the email input element within the parent with class '.ff-el-input--content'
+      var emailInputElement = document.querySelector(
+        '.ff-el-input--content input[type="email"]'
+      );
+
+      // Insert the icon element before the email input element
+      if (emailInputElement) {
+        emailInputElement.parentNode.insertBefore(
+          emailIconElement,
+          emailInputElement
+        );
+      }
+    </script>
+  </body>
+</html>
